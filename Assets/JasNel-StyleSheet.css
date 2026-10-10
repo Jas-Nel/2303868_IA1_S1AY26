@@ -1,0 +1,149 @@
+/* Jasmin Nelson */
+/* Student ID: 2303868 */
+/* Web Programming Lab 1 */
+/* CSS for the Student Profile Page */
+
+
+/* This first section basiclly formats everything on the webpage */
+body { 
+font-family: Sans-serif;
+background-color: #fff5f8;	/* I used a light pink color for the background */
+}
+
+
+/* This section formats the Header on the webpage */
+header {
+background-color: #f7c6d9;	/* I used a darker pink color for the header background */
+text-align: center;
+padding: 20px;			/* I wanted a bit of space around the words in the header */
+}
+
+
+/* This section formats the Navigation Bar on the webpage */
+body > ul { 			/* Here, I only wanted the list from the body to be formatted */
+background-color: black;
+padding: 12px;
+text-align: center;
+list-style-type: none; 		/* I wanted to remove the bullet points from the list */
+}
+
+body > ul li { 			/* Then I wanted each item from the list to be formatted */
+display: inline; 		/* This is so the items are displayed beside each other, not vertically */
+margin: 15px; 			/* I wanted a bit of space between the words */
+}
+
+body > ul li a {		/* At first, because the words are actually links, they were blue and underlined so... */
+color: white;			/* This is to change the font color to white */
+text-decoration: none;		/* While this removes the underline */
+}
+
+body > ul li a:hover {
+color: #f7c6d9;	 		/* For visuals, the links actually changes to pink when you hover over it */
+}
+		
+
+
+/* This formats the main sections on the webpage */
+section {
+background-color: white;	/* I made each section white so its easier to read */
+padding: 20px;			/* I wanted a bit of space around the words in each section */
+border: 2px solid #f7c6d9;	/* I also wanted a pink border around each section */
+margin-top: 20px;		/* and I wanted a bit of space between each section */
+}
+
+
+/* This formats the photo in the "About Me" section on the webpage */
+.me img {
+width: 200px; 			/* This makes the photo 200 pixels wide*/
+height: 250px; 			/* This makes the photo 250 pixels high*/
+border: 4px solid #f7c6d9;	/* I also wanted a pink border around the photo */
+}
+
+/* This formats the table in the "Weekly Schedule" section on the webpage */ 
+th {
+background-color: #f7c6d9; 	/* I wanted a pink background for the table headings */	
+}
+
+th, td {			
+border: 1px solid black;	/* I also wanted a thin border around the cells of the table */
+padding: 10px;			/* and a bit of space inside the cells */
+text-align: left;
+}
+
+/* This formats the form in the "Contact Me" section on the webpage */ 
+label {
+display: block;			/* So the labels are in their own line */
+margin-top: 10px;		/* For space above each label*/
+margin-bottom: 5px;		/* For space between each label and input box*/
+}
+
+input[type="text"],
+input[type="email"],
+textarea {	
+border: 1px solid black;
+width: 50%; 			/* This makes the input box wider */
+}
+
+input[type="submit"] {
+display: block;
+margin-top: 15px;		/* This adds space between the button and the form */
+background-color: black;	/* This makes the button black */
+color: white;			/* This makes the words in the button white */
+padding: 10px 20px;		/* This makes the button bigger */
+}
+
+input[type="submit"]:hover {
+background-color: #f7c6d9;  	/* For visuals, the button actually changes to pink when you hover over it, and the words inside change to black */
+color: black;
+}
+
+
+/* This formats the form in the Footer section on the webpage */
+footer {
+background-color: black;	/* This makes the background black */
+color: white;
+text-align: center;
+padding: 15px;			/* So there is more space in the footer */
+margin-top: 20px;		/* I wanted a bit of space above the footer */
+}
+
+footer span {
+    color: #f7c6d9;		/* I used span so i can specifically format my name in the footer */
+}
+
+
+/* This formats the mobile layout of the webpage */
+/* If a screen if 600 or less pixels wide, this allows the webppage to fit all the same */
+
+@media screen and (max-width: 600px) {
+
+body {
+margin: 10px;
+font-size: 15px;
+}
+
+body > ul li {			
+display: block;			/* Allows the navigation section to appear vertically */
+margin: 8px;			/* Adds space between the navigation titles */
+
+}
+
+
+.me img {
+margin-bottom: 15px;		/* I wanted more space under the photo */
+}
+
+
+
+table {
+font-size: 12px;		/* Reduced the table text to fit a small screen */
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 80%;			/* Resize the form text to fit better */
+}
+}

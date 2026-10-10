@@ -1,0 +1,67 @@
+/* Jasmin Nelson */
+/* Student ID: 2303868 */
+/* Web Programming Individual Assignment 1 */
+/* CSS for the Student Portfolio Website */
+
+/* The colours and font used throughout the website */
+:root {--pink: #e9a3c2; --light-pink: #fff0f6; --black: #222222; --white: #ffffff; --font: Arial;}
+
+/* This makes the element sizes easier to control */
+* {box-sizing: border-box;}
+
+
+
+/* This styles the whole webpage */
+body {font-family: var(--font); font-size: 15px; background-color: var(--light-pink); color: var(--black);}
+
+/* This styles the top of the page */
+header {background-color: var(--pink); text-align: center; padding: 20px;}
+
+/* This styles the navigation bar */
+nav {background-color: var(--black); text-align: center; padding: 10px;}
+
+/* This styles the navigation links */
+nav a {color: var(--white); text-decoration: none; margin: 10px;}
+
+/* This changes link colour when the mouse is over it */
+nav a:hover {color: var(--pink);}
+
+
+
+/* This styles the main content area on the page */
+main {max-width: 950px; margin: 20px auto; padding: 10px;}
+
+
+
+/* This styles each section individually on the page*/
+section {background-color: var(--white); padding: 20px; margin-bottom: 20px;}
+
+/* This styles the section headings */
+h2 {color: var(--pink);}
+
+
+
+/* This makes the ID picture smaller */
+.jasphoto2 {width: 100px; border: 5px solid var(--pink);} 
+
+/* This styles the bottom of the page */
+footer {background-color: var(--black); color: var(--white); text-align: center; padding: 10px;}
+
+
+
+/* This changes the layout on small screens */
+@media (max-width: 600px) {
+body {font-size: 10px;}
+header {padding: 15px 10px;}
+
+header h1 {font-size: 15px;}
+nav a {display: block; margin: 6px;}
+
+main {margin: 10px auto; padding: 10px;}
+
+section {padding: 10px; margin-bottom: 10px;}
+
+h2 {font-size: 15px;}
+footer {font-size: 10px;}
+}
+

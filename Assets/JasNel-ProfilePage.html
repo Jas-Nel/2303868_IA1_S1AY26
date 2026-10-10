@@ -1,0 +1,150 @@
+<!-- Jasmin Nelson -->
+<!-- Student ID: 2303868 -->
+<!-- Web Programming Lab 1 -->
+<!-- HTML for the Student Profile Page -->
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>Jasmin Nelson - Student Profile</title>				<!-- This is shown in the browser tab -->
+<link rel="stylesheet" href="JasNel-StyleSheet.css"> 			<!-- This connects the html to the css -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<!-- This is the instructions used for the mobile view of the webpage -->
+<!-- width=device is so the webpage adjusts to the actual width of any device -->
+<!-- initial-scale is used so that the webpages adjust, first at normal zoom, not too zoomed in or out  -->
+</head>
+
+
+<body>
+
+<!-- This is the header section of the webpage -->
+<header>
+    <h1>University of Technology, Jamaica</h1>
+    <p>Student Profile Page</p>
+</header>
+
+<!-- I used an unordered list here for my navigation bar links -->
+<ul>
+  <li><a href="#about">ABOUT ME</a></li>				<!-- a, creates the hyperlink and href, tells where the link should go on the webpage -->
+  <li><a href="#courses">MY COURSES</a></li>
+  <li><a href="#contact">CONTACT ME</a></li>
+</ul>
+
+
+<main>
+<!-- This is where the main info. is on my webpage -->
+
+<h2>Welcome!</h2>
+<p> Hello, my name is Jasmin and this is my student profile page. Here you can learn a little about me, my courses and my weekly schedule.</p>
+						
+
+<section id="about">							<!-- I created a section and linked it to the navigation bar with a unique id ! -->
+<h2>About Me</h2>
+
+<div class="me">							<!-- I then used div to group my photo and info in a section to format easier with css. -->
+
+<img src="jasphoto.jpg" alt="Photo of Jasmin Nelson">			<!-- This is where my photo is being displayed  -->
+
+<div>
+<h3>Jasmin Nelson</h3>
+<p> <strong>Programme:</strong> Computer Networking and Security </p>	<!-- strong was used to make specific text bold -->
+<p> <strong>Major:</strong>  Cyber Security </p>
+<p> <strong>Year of Study:</strong> Year 4, Semester 1 </p>
+</div>
+
+</div>									<!-- This is my biography -->
+
+<p> I am a curious and driven individual with a strong interest in technology, problem-solving and understanding how things work. I enjoy challenging myself, learning from new experiences and developing a deeper understanding of complex ideas rather than simply accepting things at face value. </p>
+
+<p> My interests include travelling, meeting new people, exploring different perspectives, and continually growing as a person. I am particularly interested in cybersecurity, ethical hacking, network security and protecting digital systems. </p>
+
+<p> In the future, I hope to build a career that allows me to apply and expand my knowledge whilst making a meaningful contribution to the field. </p>
+
+</section>
+
+
+<!-- This is the Courses section on the webpage -->
+<section id="courses">
+
+<h2>My Courses</h2>
+<ul>
+  <li>CNS4001: Security Analysis and Response</li>
+  <li>CIT4024: Information Technology Project Management</li>
+  <li>CIT2011: Web Programming</li>
+  <li>HUM3010: Professional, Ethical & Legal Implications of Computing Systems</li>
+  <li>CIT4036: Professional Development Seminar</li>
+</ul>
+
+</section>
+
+
+<!-- This is my Weekly Schedule section on the webpage -->
+<section>
+<h2>Weekly Schedule</h2>
+
+<table>
+<tr>
+<th>Course</th> <th>Week Day</th> <th>Time</th>
+</tr>
+
+<tr>
+<td>Information Technology Project Management</td> <td>Monday</td> <td>6:00 PM</td>
+</tr>
+
+<tr>
+<td>Security Analysis and Response</td> <td>Tuesday</td> <td>11:00 AM</td>
+</tr>
+
+<tr>
+<td>Professional, Ethical & Legal Implications</td> <td>Tuesday</td> <td>5:00 PM</td>
+</tr>
+
+<tr>
+<td>Web Programming</td> <td>Thursday</td> <td>8:00 PM</td>
+</tr>
+
+<tr>
+<td>Professional Development Seminar</td> <td>Friday</td> <td>2:00 PM</td>
+</tr>
+
+</table>
+</section>
+
+
+<!-- This is the Contact Section on the webpage -->
+<section id="contact">
+<h2>Contact Me</h2>
+
+<form>
+<label>Name:</label> <input type="text" name="name">				<!-- This creates an input box and tells the browser that  the field is intended for a name  -->
+
+<label>Email:</label> <input type="email" name="email">
+
+<label>Message:</label> <textarea name="message" rows="5"></textarea>		<!-- text area creates a bigger box -->
+
+
+<input type="submit" value="Submit">						<!-- I then added a submit button -->
+
+</form>
+
+</section>
+
+</main>
+
+
+<!-- This is the Footer section on the webpage -->
+<footer>
+<p> <span>Jasmin Nelson</span> </p>						<!-- I used span so i can specifically format my name in the footer -->
+
+<p> &copy; 2026 University of Technology, Jamaica </p>				<!-- &copy was used for the copyright symbol -->
+
+		
+</footer>
+
+</body>
+</html>
+
+
